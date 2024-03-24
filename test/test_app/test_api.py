@@ -1,6 +1,7 @@
 from models.client import ClientEntity
 from app.client_service import ClientService
 
+
 class TestNewClient:
     def test_add_new_client1(self):
         api = ClientService()
@@ -52,4 +53,3 @@ class TestNewClient:
         assert api.clients[0].client_id == 0
         assert api.clients[0].phone_number == '79123456789'
         assert api.clients[0].code_operator == '123'
-
