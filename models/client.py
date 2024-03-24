@@ -1,5 +1,3 @@
-import re
-
 from utils.utils import validate_phone_number
 
 
