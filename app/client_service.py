@@ -4,7 +4,7 @@ from models.client import ClientEntity
 from utils.utils import validate_phone_number
 
 
-class Api:
+class ClientService:
     clients: List[ClientEntity] = []
 
     def get_client(self, client_id: int) -> Optional[ClientEntity]:
@@ -21,18 +21,22 @@ class Api:
                                   code_operator, tag)
         self.clients.append(new_client)
 
-    def update_client(self, client_id: int, phone_number: str,
-                 code_operator: str,
-                 tag: str):
+    # def update_client(self, client_id: int, phone_number: str,
+    #              code_operator: str,
+    #              tag: str):
+    def update_client(self, client_id: int, **kwargs):
         client = self.get_client(client_id)
-
         if client:
-            if phone_number:
-                if validate_phone_number(phone_number):
-                    self.clients[client_id].phone_number = phone_number
-            if code_operator:
-                self.clients[client_id].code_operator = code_operator
-            if tag:
-                self.clients[client_id].tag = tag
-            return self.clients[client_id]
+            for key, value in kwargs.items():
+                if key == 'phone_number' and not validate_phone_number(value):
+                    continue
+                setattr(self.clients[client_id], key, value)
+
         return None
+
+    def delete_client(self, client_id: int):
+        client = self.get_client(client_id)
+        if client:
+            self.clients.remove(client)
+            return True
+        return False
