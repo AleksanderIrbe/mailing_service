@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f967e0-b3fc-4c45-af2b-dd5cc3e54ec5" name="Changes" comment="made delete_client">
-      <change beforePath="$PROJECT_DIR$/test/test_app/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_app/test_api.py" afterDir="false" />
-    </list>
+    <list default="true" id="d6f967e0-b3fc-4c45-af2b-dd5cc3e54ec5" name="Changes" comment="cosmetic" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,7 +215,47 @@
       <option name="project" value="LOCAL" />
       <updated>1711289418791</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rename project">
+      <option name="closed" value="true" />
+      <created>1711295932336</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711295932336</updated>
+    </task>
+    <task id="LOCAL-00004" summary="made gitignore">
+      <option name="closed" value="true" />
+      <created>1711296051804</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711296051804</updated>
+    </task>
+    <task id="LOCAL-00005" summary="made gitignore">
+      <option name="closed" value="true" />
+      <created>1711296081094</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711296081094</updated>
+    </task>
+    <task id="LOCAL-00006" summary="made gitignore">
+      <option name="closed" value="true" />
+      <created>1711296177463</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711296177463</updated>
+    </task>
+    <task id="LOCAL-00007" summary="cosmetic">
+      <option name="closed" value="true" />
+      <created>1711296776080</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711296776080</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,17 +272,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made update_client" />
     <MESSAGE value="made delete_client" />
-    <option name="LAST_COMMIT_MESSAGE" value="made delete_client" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_app/test_api.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="rename project" />
+    <MESSAGE value="made gitignore" />
+    <MESSAGE value="cosmetic" />
+    <option name="LAST_COMMIT_MESSAGE" value="cosmetic" />
   </component>
 </project>
