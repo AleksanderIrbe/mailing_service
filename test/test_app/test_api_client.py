@@ -1,5 +1,5 @@
-from models.client import ClientEntity
 from app.client_service import ClientService
+from models.client import ClientEntity
 
 
 class TestNewClient:
