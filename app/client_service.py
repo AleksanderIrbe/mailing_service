@@ -2,7 +2,7 @@ from typing import List, Optional
 
 from models.client import ClientEntity
 from utils.utils import validate_phone_number
-
+from fastapi.responses import JSONResponse
 
 class ClientService:
     clients: List[ClientEntity] = []
@@ -17,9 +17,13 @@ class ClientService:
                        phone_number: str,
                        code_operator: str,
                        tag: str):
-        new_client = ClientEntity(client_id, phone_number,
-                                  code_operator, tag)
-        self.clients.append(new_client)
+        try:
+            new_client = ClientEntity(client_id, phone_number,
+                                      code_operator, tag)
+            self.clients.append(new_client)
+        except ValueError as e:
+            response = JSONResponse(status_code=404, content={"message": f"Error creating client: {e}"})
+            return response
 
     # def update_client(self, client_id: int, phone_number: str,
     #              code_operator: str,

@@ -10,7 +10,7 @@ from app.client_service import ClientService
 from models.client import ClientEntity
 
 app = FastAPI()
-# app.include_router(client_router)
+app.include_router(client_router)
 
 
 class EmailSchema(BaseModel):
